@@ -47,6 +47,7 @@ a{
   text-decoration: none;
 } 
 header{
+  background-color: transparent !important;
   height: 80px;
   padding: 15px 0;
   display: flex;
