@@ -1,3 +1,6 @@
+body{
+  max-height: 100vh;
+}
 .bar{
 }
 .bar{
@@ -55,8 +58,8 @@
 }
 
 .wrapper {
-  /* margin-top: 50px; */
-  margin: 220px auto;
+  margin-top: 220px !important;
+  margin: 0 auto;
   padding: 40px;
   max-width: 1100px;
 }
