@@ -9,12 +9,12 @@
 @section('body')
 
     <div class="bar">
-                    <div class="info">
+                    <div class="info col-lg-8 col-m-4">
                     <p class="name"><span>Name:</span> Abdelrhman Ahmed Elnhas</p>
                     <p class="age"><span>Age:</span> 23</p>
                     <p class="number"><span>Phone Number:</span> +201127698622</p>
                     </div>
-                    <div class="wallet">
+                    <div class="wallet col-lg-4 col-m-8">
                     <p class="walletname">MasterCard</p>
                     <p class="amount">$15000</p>
                     <div class="transfer">

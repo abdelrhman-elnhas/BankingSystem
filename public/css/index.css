@@ -107,13 +107,16 @@ header>ul>li:hover::before{
     align-items: center;
 }
 #home img{
-    margin-left: 250px;
+    max-width: 530px;
+    padding-left: 20px;
     margin-top: 40px;
     animation: pop 3s ease-in-out;
     -webkit-animation: pop 3s infinite ease-in-out;
 }
 .txt{
     margin-left: 80px;
+    width: 450px;
+
 }
 .Slogan{
     display: inline-block;
