@@ -16,11 +16,10 @@ return new class extends Migration
         Schema::create('customers', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->int('age');
-            $table->int('balance');
-            $table->int('status');
-            $table->string('phone')->unique();
-            $table->rememberToken();
+            $table->string('phone');
+            $table->integer('age');
+            $table->integer('balance');
+            $table->enum('status', ['Active', 'Closed', 'Susbended']);
             $table->timestamps();
         });
     }
@@ -32,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('customers');
     }
 };

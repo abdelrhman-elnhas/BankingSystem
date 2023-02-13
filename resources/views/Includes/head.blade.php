@@ -27,6 +27,9 @@
 @include('Includes.header')
 
 @yield('body')
+</div>
+</div>
+</div>
 
 @include('Includes.floating')
 
