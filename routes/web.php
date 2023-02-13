@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 Route::get('', 'App\Http\Controllers\MainController@home');
 Route::get('customers', 'App\Http\Controllers\MainController@customers');
+Route::post('transfer', 'App\Http\Controllers\MainController@transfer');

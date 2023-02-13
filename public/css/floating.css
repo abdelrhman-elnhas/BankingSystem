@@ -4,7 +4,9 @@
     --sec: #F66B0E;
     --light: #EFEFEF;
 }
-.menu-item,.menu-open-button {
+
+.menu-item,
+.menu-open-button {
     background: var(--sec);
     border-radius: 100%;
     width: 40px;
@@ -25,9 +27,9 @@
     -o-transform: translate3d(0, 0, 0);
 }
 
-.icon{
+.icon {
     text-align: center;
-    margin-top:2px;
+    margin-top: 2px;
     margin-left: -1px;
 }
 
@@ -39,8 +41,8 @@
     position: absolute;
     bottom: 0;
     padding-top: 60px;
-    padding-left: 8%;
-    width: 650px;
+    padding-left: 5%;
+    width: 100%;
     height: 150px;
     font-size: 20px;
     text-align: left;
@@ -90,7 +92,7 @@
     -o-transform: scale(1, 1) translate3d(0, 0, 0);
 }
 
-.menu-open-button:hover{
+.menu-open-button:hover {
     transform: scale(1.2, 1.2) translate3d(0, 0, 0);
     -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
     -moz-transform: scale(1.2, 1.2) translate3d(0, 0, 0);

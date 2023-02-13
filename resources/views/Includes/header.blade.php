@@ -2,7 +2,7 @@
     <div class="container">
     <div class="row">
         <header>
-        <img class"Logo" src="{{asset('img')}}/logo.png" width="10%" alt="">
+        <img class="Logo" src="{{asset('img')}}/logo.png" width="12%" alt="">
         <ul>
             <li></li>
             <li><a href="{{url('')}}">Home</a></li>

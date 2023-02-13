@@ -1,28 +1,34 @@
-:root{
-    --dark : #112B3C ;
-    --first : #205375 ;
-    --sec : #F66B0E ;
-    --light : #EFEFEF ;
+:root {
+    --dark: #112B3C;
+    --first: #205375;
+    --sec: #F66B0E;
+    --light: #EFEFEF;
 }
-html{
+
+html {
     direction: ltr;
     scroll-behavior: smooth;
 }
-*{
+
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Russo One', sans-serif;
     background: url('../img/bg.jpg');
     /*background-size: cover;
-    */padding: 0;
+    */
+    padding: 0;
     margin: 0;
     width: 100%;
     height: 100vh;
     background-position: 0% 50%;
     animation: gradient 40s ease infinite;
     -webkit-animation: gradient 40s ease infinite;
+    overflow-x: hidden;
 }
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -36,17 +42,21 @@ body{
         background-position: 0% 50%;
     }
 }
-.mycontainer{
+
+.mycontainer {
     background: radial-gradient(closest-side, transparent 15%, #205375cc);
     min-height: 100vh;
 }
-li{
+
+li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-header{
+
+header {
     background-color: transparent !important;
     height: 80px;
     padding: 15px 0;
@@ -55,20 +65,25 @@ header{
     flex-wrap: wrap;
     position: relative;
 }
-header img{
+
+header img {
     padding-bottom: 15px;
     display: inline-block;
 }
+
 header ul {
-    position: absolute;
-    right: 100px;
+    width: 88%;
+    padding: 0;
+    text-align: right;
 }
-header>ul>li{
+
+header>ul>li {
     display: inline-block;
     position: relative;
 }
-header>ul>li::before{
-    content:"";
+
+header>ul>li::before {
+    content: "";
     position: absolute;
     left: 14px;
     bottom: -10px;
@@ -76,61 +91,65 @@ header>ul>li::before{
     height: 3px;
     background-color: var(--sec);
     /*border-radius: 4px;
-    */-webkit-border-radius: 4px;
+    */
+    -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     scale: 0;
     transform-origin: right;
     transition: scale 0.6s;
-    -webkit-transition:;
-    -moz-transition:;
-    -ms-transition:;
-    -o-transition:;
+    -webkit-transition: ;
+    -moz-transition: ;
+    -ms-transition: ;
+    -o-transition: ;
 }
-header>ul>li>a{
+
+header>ul>li>a {
     justify-self: flex-end;
     color: var(--light);
     padding: 0 35px;
     text-indent: 20px;
 }
-header>ul>li>a:hover{
+
+header>ul>li>a:hover {
     color: var(--sec);
 }
-header>ul>li:hover::before{
+
+header>ul>li:hover::before {
     scale: 1;
     transform-origin: left;
 }
-#home{
+
+#home {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#home img{
-    max-width: 530px;
+
+#home img {
+    max-width: 90%;
     padding-left: 20px;
     margin-top: 40px;
     animation: pop 3s ease-in-out;
     -webkit-animation: pop 3s infinite ease-in-out;
 }
-.txt{
-    margin-left: 80px;
-    width: 450px;
 
-}
-.Slogan{
+.Slogan {
     display: inline-block;
     color: var(--light);
     font-size: 60px;
     font-weight: bold;
 }
-.IntroTxt{
+
+.IntroTxt {
     display: inline-block;
     color: var(--light);
     font-size: 30px;
     margin-bottom: 20px;
 }
-.transferBtn{
+
+.transferBtn {
     position: relative;
     padding: 10px 20px;
     border-radius: 6px;
@@ -148,17 +167,21 @@ header>ul>li:hover::before{
     -ms-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
 }
-.transferBtn:hover{
+
+.transferBtn:hover {
     color: var(--first);
 }
-.transferBtn:active{
+
+.transferBtn:active {
     transform: scale(0.96);
     -webkit-transform: scale(0.96);
     -moz-transform: scale(0.96);
     -ms-transform: scale(0.96);
     -o-transform: scale(0.96);
 }
-.transferBtn::before , .transferBtn::after{
+
+.transferBtn::before,
+.transferBtn::after {
     position: absolute;
     content: "";
     width: 150%;
@@ -172,13 +195,15 @@ header>ul>li:hover::before{
     z-index: -1000;
     background-repeat: no-repeat;
 }
-.transferBtn.animate::after{
+
+.transferBtn.animate::after {
     bottom: -70%;
-    background-image: radial-gradient(circle , var(--sec) 20% , transparent 20%),    radial-gradient(circle, var(--sec) 20%, transparent 20%),    radial-gradient(circle, transparent 10% , var(--sec) 15%, transparent 20%),    radial-gradient(circle, var(--sec) 20%, transparent 20%),    radial-gradient(circle, var(--sec) 20%, transparent 20%),    radial-gradient(circle, var(--sec) 20%, transparent 20%),    radial-gradient(circle, var(--sec) 20%, transparent 20%);
-    background-size: 15% 15% , 20% 20% , 18% 18% ,20% 20% , 15% 15% , 20% 20% , 18% 18%;
+    background-image: radial-gradient(circle, var(--sec) 20%, transparent 20%), radial-gradient(circle, var(--sec) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--sec) 15%, transparent 20%), radial-gradient(circle, var(--sec) 20%, transparent 20%), radial-gradient(circle, var(--sec) 20%, transparent 20%), radial-gradient(circle, var(--sec) 20%, transparent 20%), radial-gradient(circle, var(--sec) 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
     animation: bottomBubbles ease-in-out 0.6s forwards infinite;
     -webkit-animation: bottomBubbles ease-in-out 0.6s forwards infinite;
 }
+
 .transferBtn.animate::before {
     top: -70%;
     background-image: radial-gradient(circle, var(--sec) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--sec) 20%, transparent 30%), radial-gradient(circle, var(--sec) 20%, transparent 20%), radial-gradient(circle, var(--sec) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--sec) 15%, transparent 20%), radial-gradient(circle, var(--sec) 20%, transparent 20%), radial-gradient(circle, var(--sec) 20%, transparent 20%), radial-gradient(circle, var(--sec) 20%, transparent 20%), radial-gradient(circle, var(--sec) 20%, transparent 20%);
@@ -186,18 +211,22 @@ header>ul>li:hover::before{
     animation: bottomBubbles ease-in-out 0.6s forwards infinite;
     -webkit-animation: topBubbles ease-in-out 0.6s forwards infinite;
 }
+
 @keyframes bottomBubbles {
-    0%{
+    0% {
         background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
     }
+
     50% {
         background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
     }
+
     100% {
         background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
         background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
     }
 }
+
 @keyframes topBubbles {
     0% {
         background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
@@ -212,18 +241,18 @@ header>ul>li:hover::before{
         background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
     }
 }
+
 @keyframes pop {
-    0%{
+    0% {
         scale: 1;
     }
+
     50% {
         scale: 0.98;
     }
-    100%{
+
+    100% {
         scale: 1;
     }
 
 }
-
-
-
